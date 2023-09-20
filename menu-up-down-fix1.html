@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./menu-up-down-fix1.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Koh Santepheap:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kaushan Script:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Katibeh:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Crimson Text:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source Serif Pro:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="menu-updown-fix7">
+      <div class="property-1menu-close">
+        <img class="appetido-icon7" alt="" src="./public/appetido.svg" />
+
+        <img
+          class="icon-hamburger-menu7"
+          alt=""
+          src="./public/-icon-hamburger-menu.svg"
+        />
+      </div>
+      <div class="property-1menu-open">
+        <div class="open5">
+          <img class="appetido-icon7" alt="" src="./public/appetido.svg" />
+
+          <img
+            class="icon-hamburger-menu7"
+            alt=""
+            src="./public/-icon-hamburger-menu.svg"
+          />
+        </div>
+        <div class="open6">
+          <div class="home1" id="homeText">Home</div>
+        </div>
+        <div class="open6">
+          <div class="home1" id="tentangKamiText">Tentang Kami</div>
+        </div>
+        <div class="open6">
+          <div class="home1" id="menuText">Menu</div>
+        </div>
+        <div class="open9">
+          <div class="hubungi-kami1">Hubungi Kami</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var homeText = document.getElementById("homeText");
+      if (homeText) {
+        homeText.addEventListener("click", function (e) {
+          window.location.href = "./m-e-n-u-u-p.html";
+        });
+      }
+      
+      var tentangKamiText = document.getElementById("tentangKamiText");
+      if (tentangKamiText) {
+        tentangKamiText.addEventListener("click", function (e) {
+          window.location.href = "./a-b-o-u-t-u-s.html";
+        });
+      }
+      
+      var menuText = document.getElementById("menuText");
+      if (menuText) {
+        menuText.addEventListener("click", function (e) {
+          window.location.href = "./o-u-r-m-e-n-u.html";
+        });
+      }
+      </script>
+  </body>
+</html>

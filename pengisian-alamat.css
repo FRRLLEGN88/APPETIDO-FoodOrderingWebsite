@@ -1,0 +1,293 @@
+.pengisian-alamat-child,
+.pengisian-alamat-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 1440px;
+  height: 125px;
+}
+.pengisian-alamat-item {
+  top: 179px;
+  height: 124px;
+}
+.pengisian-alamat-child1,
+.pengisian-alamat-child2,
+.pengisian-alamat-inner,
+.rectangle-section {
+  position: absolute;
+  top: 314px;
+  left: 0;
+  background-color: var(--color-white);
+  width: 1440px;
+  height: 124px;
+}
+.pengisian-alamat-child1,
+.pengisian-alamat-child2,
+.rectangle-section {
+  top: 994px;
+}
+.pengisian-alamat-child1,
+.pengisian-alamat-child2 {
+  top: 492px;
+  height: 226px;
+}
+.pengisian-alamat-child2 {
+  top: 729px;
+}
+.ubah-alamat {
+  margin: 0;
+  position: absolute;
+  top: 36px;
+  left: 14px;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  color: var(--color-palevioletred-100);
+}
+.alamat,
+.kontak1 {
+  position: absolute;
+  top: 0;
+  left: 32px;
+}
+.alamat {
+  top: 309px;
+  left: 30px;
+}
+.input,
+.user-number {
+  position: absolute;
+  left: 6px;
+}
+.input {
+  border: 0;
+  font-family: var(--font-poppins);
+  font-size: var(--font-size-17xl);
+  background-color: transparent;
+  top: 5px;
+  color: var(--color-black);
+  text-align: center;
+}
+.user-number {
+  top: 201px;
+  width: 358px;
+  height: 63px;
+}
+.kirim-btn:hover,
+.username-child {
+  background-color: var(--color-white);
+}
+.username-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1158px;
+  height: 63px;
+}
+.farrell-eagan {
+  position: absolute;
+  top: 9px;
+  left: 6px;
+}
+.kontak,
+.username {
+  position: absolute;
+  top: 61px;
+  left: 0;
+  width: 1158px;
+  height: 63px;
+  font-size: var(--font-size-17xl);
+}
+.kontak {
+  top: 145px;
+  left: 27px;
+  height: 333px;
+  font-size: var(--font-size-base);
+}
+.kecamatan,
+.kotakab,
+.provinsi {
+  position: absolute;
+  top: 519px;
+  left: 27px;
+  width: 903px;
+  height: 45px;
+}
+.kecamatan,
+.kotakab {
+  top: 575px;
+}
+.kecamatan {
+  top: 631px;
+}
+.blank-line4 {
+  margin: 0;
+  font-size: var(--font-size-xl);
+}
+.universitas-darussalam-gontor {
+  margin: 0;
+  font-size: var(--font-size-5xl);
+}
+.universitas-darussalam-gontor-container {
+  border: 0;
+  font-family: var(--font-poppins);
+  background-color: transparent;
+  position: absolute;
+  top: 759px;
+  left: 34px;
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+  width: 857px;
+  height: 122px;
+}
+.tandai-sebagai {
+  position: absolute;
+  top: 1044px;
+  left: 34px;
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  font-family: var(--font-inter);
+  text-align: left;
+}
+.kirim-btn-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-indianred);
+  width: 1414px;
+  height: 67px;
+  cursor: pointer;
+}
+.kirim {
+  position: absolute;
+  top: 9px;
+  left: 626px;
+  font-size: var(--font-size-17xl);
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: left;
+}
+.kirim-btn {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 1129px;
+  left: 17px;
+  width: 1414px;
+  height: 67px;
+}
+.kirim-btn:hover {
+  mix-blend-mode: darken;
+}
+.kantor-btn-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-indianred);
+  box-sizing: border-box;
+  width: 180px;
+  height: 39px;
+}
+.kantor-btn-child:hover {
+  background-color: var(--color-indianred);
+  border: 1px solid var(--color-white);
+  box-sizing: border-box;
+}
+.kantor {
+  position: absolute;
+  top: 8px;
+  left: 53px;
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  width: 73px;
+}
+.kantor:active {
+  color: var(--color-white);
+}
+.kantor-btn,
+.rumah-btn-child {
+  position: absolute;
+  width: 180px;
+  height: 39px;
+}
+.kantor-btn {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 1045px;
+  left: 1251px;
+}
+.kantor-btn:active,
+.rumah-btn-child:hover {
+  background-color: var(--color-indianred);
+}
+.rumah-btn-child {
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-indianred);
+  box-sizing: border-box;
+}
+.kantor-btn:active,
+.rumah-btn-child:active,
+.rumah-btn-child:hover {
+  border: 1px solid var(--color-white);
+  box-sizing: border-box;
+}
+.rumah {
+  position: absolute;
+  top: 8px;
+  left: 48px;
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  width: 83px;
+}
+.rumah:active {
+  font-weight: 500;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+}
+.rumah-btn {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 1046px;
+  left: 1055px;
+  width: 180px;
+  height: 39px;
+}
+.rumah-btn:active {
+  background-color: var(--color-indianred);
+  border: 1px solid var(--color-white);
+  box-sizing: border-box;
+}
+.pengisian-alamat {
+  position: relative;
+  background-color: var(--color-gainsboro);
+  width: 1440px;
+  height: 1226px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: center;
+  font-size: var(--font-size-21xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}

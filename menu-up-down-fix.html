@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./menu-up-down-fix.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Koh Santepheap:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kaushan Script:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Katibeh:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Crimson Text:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source Serif Pro:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="menu-updown-fix1" data-animate-on-scroll>
+      <div class="open">
+        <img class="appetido-icon1" alt="" src="./public/appetido.svg" />
+
+        <button class="icon-hamburger-menu1" id="drawericonHamburgerMenu">
+          <img class="vector-icon7" alt="" src="./public/vector.svg" />
+
+          <img class="vector-icon8" alt="" src="./public/vector1.svg" />
+
+          <img class="vector-icon9" alt="" src="./public/vector2.svg" />
+        </button>
+      </div>
+      <div class="open1">
+        <div class="home" id="drawerhomeText">Home</div>
+      </div>
+      <div class="open1">
+        <div class="home" id="drawertentangKamiText">Tentang Kami</div>
+      </div>
+      <div class="open1">
+        <div class="home" id="drawermenuText">Menu</div>
+      </div>
+      <div class="open4">
+        <div class="hubungi-kami">Hubungi Kami</div>
+      </div>
+    </div>
+
+    <script>
+      var drawericonHamburgerMenu = document.getElementById(
+        "drawericonHamburgerMenu"
+      );
+      if (drawericonHamburgerMenu) {
+        drawericonHamburgerMenu.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      
+      var drawerhomeText = document.getElementById("drawerhomeText");
+      if (drawerhomeText) {
+        drawerhomeText.addEventListener("click", function (e) {
+          window.location.href = "./m-e-n-u-u-p.html";
+        });
+      }
+      
+      var drawertentangKamiText = document.getElementById("drawertentangKamiText");
+      if (drawertentangKamiText) {
+        drawertentangKamiText.addEventListener("click", function (e) {
+          window.location.href = "./a-b-o-u-t-u-s.html";
+        });
+      }
+      
+      var drawermenuText = document.getElementById("drawermenuText");
+      if (drawermenuText) {
+        drawermenuText.addEventListener("click", function (e) {
+          window.location.href = "./o-u-r-m-e-n-u.html";
+        });
+      }
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+      
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+      </script>
+  </body>
+</html>

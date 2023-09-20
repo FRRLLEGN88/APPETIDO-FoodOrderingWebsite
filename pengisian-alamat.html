@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./pengisian-alamat.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Koh Santepheap:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kaushan Script:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Katibeh:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Crimson Text:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source Serif Pro:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="pengisian-alamat">
+      <section class="pengisian-alamat-child"></section>
+      <section class="pengisian-alamat-item"></section>
+      <section class="pengisian-alamat-inner"></section>
+      <section class="rectangle-section"></section>
+      <section class="pengisian-alamat-child1"></section>
+      <section class="pengisian-alamat-child2"></section>
+      <h1 class="ubah-alamat">Ubah Alamat</h1>
+      <div class="kontak">
+        <div class="kontak1">Kontak</div>
+        <div class="alamat">Alamat</div>
+        <div class="user-number">
+          <input class="input" type="text" />
+        </div>
+        <div class="username">
+          <div class="username-child"></div>
+          <div class="farrell-eagan">Farrell Eagan</div>
+        </div>
+      </div>
+      <select class="provinsi">
+        <option value="Provinsi">JAWA TIMUR</option>
+        <option value="Provinsi">JAWA BARAT</option>
+        <option value="Provinsi">JAWA TENGAH</option>
+      </select>
+      <select class="kotakab" required="{true}">
+        <option value="Kab">SURABAYA</option>
+        <option value="Kab">PONOROGO</option>
+        <option value="Kab">SIDOARJO</option>
+        <option value="Kab">MADIUN</option>
+        <option value="Kab">WONOGIRI</option>
+        <option value="Kab">NGAWI</option>
+      </select>
+      <select class="kecamatan">
+        <option value="Kec">SIMAN</option>
+        <option value="Kec">MLARAK</option>
+        <option value="Kec">JETIS</option>
+      </select>
+      <input class="universitas-darussalam-gontor-container" type="text" />
+      <p class="blank-line4">&nbsp;</p>
+      <p class="universitas-darussalam-gontor">
+        Universitas Darussalam Gontor, Jalan Siman Ponorogo,
+      </p>
+      <p class="universitas-darussalam-gontor">Demangan, Siman</p>
+
+      <div class="tandai-sebagai">Tandai Sebagai</div>
+      <button class="kirim-btn" id="popupkirimBTN">
+        <div class="kirim-btn-child" id="popuprectangle1"></div>
+        <div class="kirim">KIRIM</div>
+      </button>
+      <button class="kantor-btn">
+        <div class="kantor-btn-child"></div>
+        <div class="kantor">Kantor</div>
+      </button>
+      <button class="rumah-btn">
+        <div class="rumah-btn-child"></div>
+        <div class="rumah">Rumah</div>
+      </button>
+    </div>
+
+    <script>
+      var popuprectangle1 = document.getElementById("popuprectangle1");
+      if (popuprectangle1) {
+        popuprectangle1.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      
+      var popupkirimBTN = document.getElementById("popupkirimBTN");
+      if (popupkirimBTN) {
+        popupkirimBTN.addEventListener("click", function (e) {
+          var popup = e.currentTarget.parentNode;
+          function isOverlay(node) {
+            return !!(
+              node &&
+              node.classList &&
+              node.classList.contains("popup-overlay")
+            );
+          }
+          while (popup && !isOverlay(popup)) {
+            popup = popup.parentNode;
+          }
+          if (isOverlay(popup)) {
+            popup.style.display = "none";
+          }
+        });
+      }
+      </script>
+  </body>
+</html>

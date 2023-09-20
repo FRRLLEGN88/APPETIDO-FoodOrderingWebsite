@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+.popup-overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset: 0;
+}
+
+:root {
+  /* fonts */
+  --font-katibeh: Katibeh;
+  --font-inter: Inter;
+  --font-kaushan-script: "Kaushan Script";
+  --font-kanit: Kanit;
+  --font-koh-santepheap: "Koh Santepheap";
+  --font-plus-jakarta-sans: "Plus Jakarta Sans";
+  --font-poppins: Poppins;
+  --font-crimson-text: "Crimson Text";
+  --font-source-serif-pro: "Source Serif Pro";
+
+  /* font sizes */
+  --font-size-39xl: 58px;
+  --font-size-xl: 20px;
+  --font-size-45xl: 64px;
+  --font-size-13xl: 32px;
+  --font-size-41xl: 60px;
+  --font-size-lg: 18px;
+  --font-size-base: 16px;
+  --font-size-17xl: 36px;
+  --font-size-5xl: 24px;
+  --font-size-21xl: 40px;
+  --font-size-9xl: 28px;
+  --font-size-29xl: 48px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-lavenderblush: #fef2f2;
+  --color-goldenrod-100: #d4a80e;
+  --color-goldenrod-200: #d1a300;
+  --color-limegreen: #00cc21;
+  --color-gainsboro: #d9d9d9;
+  --color-indianred: #f15f79;
+  --color-palevioletred-100: #f2709c;
+  --color-lightpink: #faaca8;
+  --color-whitesmoke: #f0f0f0;
+
+  /* Gaps */
+  --gap-563xl: 582px;
+  --gap-33xl: 52px;
+
+  /* Paddings */
+  --padding-31xl: 50px;
+  --padding-225xl: 244px;
+  --padding-3xl: 22px;
+  --padding-4xs: 9px;
+  --padding-8xs: 5px;
+  --padding-9xs: 4px;
+  --padding-151xl: 170px;
+  --padding-327xl: 346px;
+  --padding-145xl: 164px;
+  --padding-10xl: 29px;
+  --padding-11xl: 30px;
+
+  /* Border radiuses */
+  --br-28xl: 47px;
+}

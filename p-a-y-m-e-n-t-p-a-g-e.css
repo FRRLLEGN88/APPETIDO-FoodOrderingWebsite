@@ -1,0 +1,107 @@
+@keyframes shadow-inset-center {
+  0% {
+    box-shadow: inset 0 0 0 0 transparent;
+  }
+  to {
+    box-shadow: inset 0 0 14px 0 rgb(0 0 0/50%);
+  }
+}
+.pilih-metode-pembayaran1 {
+  position: absolute;
+  top: 62px;
+  left: 90px;
+  font-size: var(--font-size-13xl);
+  font-weight: 600;
+}
+.metode-pembayaran1 {
+  position: absolute;
+  top: 190px;
+  left: 90px;
+  font-weight: 600;
+}
+.dana-child,
+.dana1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  position: absolute;
+}
+.dana-child {
+  background-color: var(--color-white);
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 1258px;
+  height: 130px;
+}
+.dana-child:hover {
+  animation: 2s ease 0s infinite normal none shadow-inset-center;
+  opacity: 1;
+}
+.dana1 {
+  background-color: transparent;
+  top: 45px;
+  left: 140px;
+  font-size: var(--font-size-9xl);
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+}
+.ioncash-icon {
+  top: 17px;
+  left: 14px;
+  width: 97px;
+  height: 97px;
+  overflow: hidden;
+}
+.dana,
+.ioncash-icon,
+.tunai {
+  position: absolute;
+}
+.dana {
+  top: 274px;
+  left: 105px;
+  width: 1258px;
+  height: 130px;
+}
+.tunai {
+  top: 43px;
+  left: 137px;
+  font-weight: 600;
+}
+.vector-icon13 {
+  position: absolute;
+  height: 63.08%;
+  width: 6.52%;
+  top: 16.15%;
+  right: 91.18%;
+  bottom: 20.77%;
+  left: 2.31%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.cash {
+  position: absolute;
+  top: 491px;
+  left: 105px;
+  width: 1258px;
+  height: 130px;
+  cursor: pointer;
+}
+.payment-page {
+  position: relative;
+  background-color: var(--color-white);
+  width: 1440px;
+  height: 1024px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: left;
+  font-size: var(--font-size-9xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}

@@ -1,0 +1,1084 @@
+@keyframes scale-down-center {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+}
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes shadow-inset-center {
+  0% {
+    box-shadow: inset 0 0 0 0 transparent;
+  }
+  to {
+    box-shadow: inset 0 0 14px 0 rgb(0 0 0/50%);
+  }
+}
+@keyframes wobble-hor-bottom {
+  0%,
+  to {
+    transform: translateX(0);
+    transform-origin: 50% 50%;
+  }
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+@keyframes shadow-pop-tr {
+  0% {
+    box-shadow: 0 0 rgba(62, 62, 62, 0.18), 0 0 rgba(62, 62, 62, 0.18),
+      0 0 rgba(62, 62, 62, 0.18), 0 0 rgba(62, 62, 62, 0.18),
+      0 0 rgba(62, 62, 62, 0.18), 0 0 rgba(62, 62, 62, 0.18),
+      0 0 rgba(62, 62, 62, 0.18), 0 0 rgba(62, 62, 62, 0.18);
+    transform: translateX(0) translateY(0);
+  }
+  to {
+    box-shadow: 1px -1px rgba(62, 62, 62, 0.18), 2px -2px rgba(62, 62, 62, 0.18),
+      3px -3px rgba(62, 62, 62, 0.18), 4px -4px rgba(62, 62, 62, 0.18),
+      5px -5px rgba(62, 62, 62, 0.18), 6px -6px rgba(62, 62, 62, 0.18),
+      7px -7px rgba(62, 62, 62, 0.18), 8px -8px rgba(62, 62, 62, 0.18);
+    transform: translateX(-8px) translateY(8px);
+  }
+}
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.my-bracket-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 1440px;
+  height: 119px;
+}
+.keranjang-saya1 {
+  position: absolute;
+  top: 34px;
+  left: 32px;
+  background: linear-gradient(90deg, #c84e89, #f15f79);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.jenis-pesanan-item,
+.my-bracket1 {
+  position: absolute;
+  top: 129px;
+  left: 0;
+  width: 1440px;
+  height: 119px;
+}
+.jenis-pesanan-item {
+  top: 0;
+  background-color: var(--color-white);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  height: 184px;
+}
+.pesan-antar1 {
+  position: absolute;
+  top: 79px;
+  left: 215px;
+}
+.change-order-button-inner {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 203px;
+  height: 63px;
+}
+.ganti1 {
+  position: absolute;
+  top: 7px;
+  left: 55px;
+  font-size: var(--font-size-13xl);
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: var(--color-black);
+  text-align: left;
+}
+.change-order-button2 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 72px;
+  left: 1141px;
+  width: 199px;
+  height: 59px;
+}
+.change-order-button2:hover {
+  animation: 2s ease 0s infinite normal none shadow-pop-tr;
+  opacity: 1;
+}
+.jenis-pesanan1 {
+  position: absolute;
+  top: 253px;
+  left: 0;
+  width: 1440px;
+  height: 184px;
+}
+.delivery-order-icon-item {
+  position: absolute;
+  top: 0;
+  left: 3px;
+  border-radius: 50%;
+  background-color: var(--color-lightpink);
+  width: 158px;
+  height: 158px;
+}
+.express-delivery-service {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 163px;
+  height: 144px;
+  object-fit: cover;
+}
+.delivery-order-icon1 {
+  position: absolute;
+  top: 266px;
+  left: 44px;
+  width: 163px;
+  height: 158px;
+}
+.appetido-icon4 {
+  position: relative;
+  width: 184px;
+  height: 27px;
+}
+.vector-icon18,
+.vector-icon19,
+.vector-icon20 {
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 90%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon19,
+.vector-icon20 {
+  top: 45%;
+  bottom: 45%;
+}
+.vector-icon20 {
+  top: 90%;
+  bottom: 0;
+}
+.icon-hamburger-menu4 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  width: 36px;
+  height: 28.8px;
+}
+.menu-updown-fix4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-black);
+  width: 1440px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-31xl) var(--padding-225xl);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+}
+.ringkasan-pembayaran-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 1440px;
+  height: 376px;
+}
+.div9,
+.ongkir,
+.total1 {
+  position: absolute;
+  top: 0;
+  left: 1124px;
+}
+.ongkir,
+.total1 {
+  top: 147px;
+  left: 149px;
+  width: 1198px;
+  height: 36px;
+}
+.ongkir {
+  top: 214px;
+  width: 1190px;
+}
+.biaya-lainnya,
+.biaya-tambahan {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.biaya-tambahan {
+  top: 281px;
+  left: 149px;
+  width: 1189px;
+  height: 36px;
+}
+.ringkasan-pembayaran3 {
+  position: absolute;
+  top: 56px;
+  left: 97px;
+  font-size: var(--font-size-13xl);
+  font-weight: 600;
+}
+.ringkasan-pembayaran2 {
+  position: absolute;
+  top: 1347px;
+  left: 0;
+  width: 1440px;
+  height: 376px;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+}
+.antarkan-item,
+.pemesanan-dan-pembayaran-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 1440px;
+  height: 240px;
+}
+.antarkan-item {
+  background-color: var(--color-gainsboro);
+  width: 1177px;
+  height: 82px;
+}
+.pesan-dan-antar {
+  position: absolute;
+  top: 15px;
+  left: 301px;
+  font-weight: 600;
+}
+.antarkan1 {
+  position: absolute;
+  top: 120px;
+  left: 149px;
+  width: 1177px;
+  height: 82px;
+}
+.metode-pembayaran-item {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  background-color: var(--color-white);
+  width: 1278px;
+  height: 74px;
+}
+.pilih-metode-pembayaran2 {
+  position: absolute;
+  top: 17px;
+  left: 13px;
+  font-weight: 600;
+}
+.xbox-menu-icon1 {
+  position: absolute;
+  top: 0;
+  left: 1189px;
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+}
+.metode-pembayaran2 {
+  position: absolute;
+  top: 18px;
+  left: 84px;
+  width: 1278px;
+  height: 75px;
+  font-size: var(--font-size-13xl);
+}
+.pemesanan-dan-pembayaran1 {
+  position: absolute;
+  top: 1483px;
+  left: 0;
+  width: 1440px;
+  height: 240px;
+  font-size: var(--font-size-21xl);
+}
+.alamat-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 1440px;
+  height: 335px;
+}
+.fill-address-child {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 378px;
+  height: 63px;
+}
+.isi-detail-alamat {
+  position: absolute;
+  top: 9px;
+  left: 80px;
+  font-size: var(--font-size-13xl);
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: var(--color-black);
+  text-align: left;
+}
+.location-icon {
+  position: absolute;
+  top: 5px;
+  left: 16px;
+  width: 49px;
+  height: 49px;
+  object-fit: cover;
+}
+.fill-address {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 238px;
+  left: 65px;
+  width: 374px;
+  height: 59px;
+}
+.fill-address:hover {
+  animation: 4s ease 0s infinite normal none scale-down-center;
+  opacity: 1;
+}
+.total-pembayaran-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 1440px;
+  height: 123px;
+}
+.div12,
+.total-pembayaran3 {
+  position: absolute;
+  top: 41px;
+  left: 97px;
+  font-weight: 600;
+}
+.div12 {
+  left: 1246px;
+}
+.tambah-pesanan-item,
+.total-pembayaran2 {
+  position: absolute;
+  top: 1258px;
+  left: 0;
+  width: 1440px;
+  height: 123px;
+}
+.tambah-pesanan-item {
+  top: 0;
+  background-color: var(--color-white);
+  height: 208px;
+}
+.ada-lagi-pesanannya1,
+.tambah1 {
+  position: absolute;
+  top: 19px;
+  left: 65px;
+  font-weight: 600;
+}
+.tambah1 {
+  top: 9px;
+  left: 30px;
+  font-size: var(--font-size-13xl);
+  font-family: var(--font-poppins);
+  color: var(--color-black);
+  text-align: left;
+}
+.change-order-button3 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 74px;
+  left: 1141px;
+  width: 199px;
+  height: 59px;
+}
+.change-order-button3:hover {
+  mix-blend-mode: darken;
+  animation: 2s ease 0s infinite normal none scale-up;
+  opacity: 1;
+}
+.anda-masih-bisa1 {
+  position: absolute;
+  top: 126px;
+  left: 44px;
+  font-size: var(--font-size-9xl);
+}
+.ganti-alamat-child,
+.tambah-pesanan1 {
+  position: absolute;
+  top: 632px;
+  left: 0;
+  width: 1440px;
+  height: 208px;
+}
+.ganti-alamat-child {
+  top: 0;
+  background-color: var(--color-white);
+  width: 1331px;
+  height: 144px;
+}
+.change-address-child {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 270.03px;
+  height: 63px;
+}
+.ganti-alamat1 {
+  position: absolute;
+  top: 6px;
+  left: 23px;
+  font-size: var(--font-size-13xl);
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+  width: 218px;
+}
+.change-address {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 27px;
+  left: 1033px;
+  width: 266.03px;
+  height: 59px;
+}
+.change-address:hover {
+  animation: 2s ease 0s infinite normal none wobble-hor-bottom;
+  opacity: 1;
+}
+.alamat-pengiriman,
+.rumah1 {
+  position: absolute;
+  top: 3px;
+  left: 24px;
+  font-weight: 600;
+}
+.rumah1 {
+  top: 57px;
+  font-size: var(--font-size-29xl);
+}
+.ganti-alamat {
+  position: absolute;
+  top: 25px;
+  left: 41px;
+  width: 1331px;
+  height: 144px;
+}
+.alamat1,
+.total-pesanan-inner {
+  position: absolute;
+  left: 0;
+  width: 1440px;
+}
+.alamat1 {
+  top: 486px;
+  height: 1723px;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+}
+.total-pesanan-inner {
+  top: 0;
+  background-color: var(--color-white);
+  height: 270px;
+}
+.sosis-bakar3 {
+  position: absolute;
+  top: 33px;
+  left: 53px;
+  font-weight: 600;
+  font-family: var(--font-poppins);
+}
+.div13 {
+  position: absolute;
+  top: 175px;
+  left: 65px;
+}
+.total-pesanan-child1 {
+  position: absolute;
+  top: 19px;
+  left: 1198px;
+  width: 156px;
+  height: 156px;
+  object-fit: cover;
+}
+.minus-button-item {
+  position: absolute;
+  top: 3px;
+  left: -2px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-indianred);
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+}
+.div14,
+.minus-button1 {
+  position: absolute;
+  height: 48px;
+}
+.div14 {
+  top: 0;
+  left: 6px;
+  font-size: var(--font-size-13xl);
+  font-family: var(--font-crimson-text);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  width: 24px;
+}
+.minus-button1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 211px;
+  left: 1180px;
+  width: 36px;
+}
+.minus-button1:hover,
+.plus-button1:hover {
+  animation: 2s ease 0s 1 normal none scale-up;
+  opacity: 1;
+}
+.plus-button-item {
+  position: absolute;
+  top: 4px;
+  left: -2px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-indianred);
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+}
+.plus-button1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 210px;
+  left: 1336px;
+  width: 36px;
+  height: 48px;
+}
+.amount1 {
+  position: absolute;
+  top: 211px;
+  left: 1270px;
+  font-size: var(--font-size-13xl);
+}
+.total-pesanan1 {
+  position: absolute;
+  top: 827px;
+  left: 0;
+  width: 1440px;
+  height: 270px;
+  font-family: var(--font-crimson-text);
+}
+.bracket-menu {
+  position: relative;
+  background-color: var(--color-gainsboro);
+  width: 100%;
+  height: 2191px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-21xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+.appetido-icon1 {
+  position: relative;
+  width: 184px;
+  height: 27px;
+}
+.vector-icon7,
+.vector-icon8,
+.vector-icon9 {
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 90%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.vector-icon8,
+.vector-icon9 {
+  top: 45%;
+  bottom: 45%;
+}
+.vector-icon9 {
+  top: 90%;
+  bottom: 0;
+}
+.icon-hamburger-menu1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  width: 36px;
+  height: 28.8px;
+}
+.open {
+  background-color: var(--color-black);
+  width: 1440px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-31xl) var(--padding-225xl);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+}
+.home {
+  position: relative;
+  font-weight: 600;
+  cursor: pointer;
+}
+.open1 {
+  background-color: var(--color-black);
+  width: 1440px;
+  height: 59px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-31xl) var(--padding-225xl);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: center;
+}
+.hubungi-kami {
+  position: relative;
+  font-weight: 600;
+}
+.menu-updown-fix1,
+.open4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.open4 {
+  background-color: var(--color-goldenrod-100);
+  width: 1440px;
+  height: 59px;
+  padding: var(--padding-31xl) var(--padding-225xl);
+  box-sizing: border-box;
+  justify-content: center;
+}
+.menu-updown-fix1 {
+  position: relative;
+  width: 100%;
+  justify-content: flex-start;
+  opacity: 0;
+  max-height: 90%;
+  overflow: auto;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-plus-jakarta-sans);
+}
+.menu-updown-fix1.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-top;
+}
+.pesanan-anda-segera {
+  position: relative;
+  font-weight: 600;
+}
+.frame1 {
+  width: 748px;
+  height: 690px;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-563xl);
+}
+.man-cooked-turkey-for-thanksgi1 {
+  position: relative;
+  width: 456px;
+  height: 456px;
+  object-fit: cover;
+  margin-top: -576px;
+}
+.finish {
+  position: relative;
+  background-color: var(--color-white);
+  width: 1440px;
+  height: 1024px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-151xl) var(--padding-327xl) var(--padding-145xl);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: left;
+  font-size: var(--font-size-17xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+.pilih-metode-pembayaran1 {
+  position: absolute;
+  top: 62px;
+  left: 90px;
+  font-size: var(--font-size-13xl);
+  font-weight: 600;
+}
+.metode-pembayaran1 {
+  position: absolute;
+  top: 190px;
+  left: 90px;
+  font-weight: 600;
+}
+.dana-child,
+.dana1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  position: absolute;
+}
+.dana-child {
+  background-color: var(--color-white);
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 1258px;
+  height: 130px;
+}
+.dana-child:hover {
+  animation: 2s ease 0s infinite normal none shadow-inset-center;
+  opacity: 1;
+}
+.dana1 {
+  background-color: transparent;
+  top: 45px;
+  left: 140px;
+  font-size: var(--font-size-9xl);
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+}
+.ioncash-icon {
+  top: 17px;
+  left: 14px;
+  width: 97px;
+  height: 97px;
+  overflow: hidden;
+}
+.dana,
+.ioncash-icon,
+.tunai {
+  position: absolute;
+}
+.dana {
+  top: 274px;
+  left: 105px;
+  width: 1258px;
+  height: 130px;
+}
+.tunai {
+  top: 43px;
+  left: 137px;
+  font-weight: 600;
+}
+.vector-icon13 {
+  position: absolute;
+  height: 63.08%;
+  width: 6.52%;
+  top: 16.15%;
+  right: 91.18%;
+  bottom: 20.77%;
+  left: 2.31%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.cash {
+  position: absolute;
+  top: 491px;
+  left: 105px;
+  width: 1258px;
+  height: 130px;
+  cursor: pointer;
+}
+.payment-page {
+  position: relative;
+  background-color: var(--color-white);
+  width: 1440px;
+  height: 1024px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: left;
+  font-size: var(--font-size-9xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+.pilih-tipe-pemesanan {
+  align-self: stretch;
+  position: relative;
+  font-weight: 600;
+}
+.packet-of-fried-potatoes-and-a {
+  position: relative;
+  border-radius: 228px;
+  width: 167px;
+  height: 167px;
+  object-fit: cover;
+}
+.pickup {
+  position: relative;
+  font-size: var(--font-size-9xl);
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: var(--color-black);
+  text-align: left;
+}
+.frame4,
+.pickup-btn {
+  display: flex;
+  justify-content: flex-start;
+}
+.frame4 {
+  width: 219px;
+  height: 136px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-33xl);
+}
+.pickup-btn {
+  cursor: pointer;
+  border: 0;
+  padding: 3var (--padding-9xs) 4px var(--padding-11xl);
+  background-color: var(--color-white);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 613px;
+  height: 231px;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  gap: 40px;
+}
+.delivery-btn:hover,
+.pickup-btn:hover {
+  animation: 2s ease 0s 1 normal none wobble-hor-bottom;
+  opacity: 1;
+}
+.lettering-free-delivery-with-g {
+  position: relative;
+  border-radius: 209px;
+  width: 208px;
+  height: 171px;
+  object-fit: cover;
+}
+.tiba-10- {
+  position: relative;
+  font-size: var(--font-size-9xl);
+  font-family: var(--font-poppins);
+  color: var(--color-black);
+  text-align: left;
+}
+.delivery-btn,
+.frame3,
+.frame5 {
+  display: flex;
+  justify-content: flex-start;
+}
+.frame5 {
+  width: 220px;
+  height: 136px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-33xl);
+}
+.delivery-btn,
+.frame3 {
+  flex-direction: row;
+  align-items: center;
+}
+.delivery-btn {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-11xl) 11px;
+  background-color: var(--color-white);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 613px;
+  height: 231px;
+  box-sizing: border-box;
+  gap: 38px;
+}
+.frame3 {
+  align-self: stretch;
+  height: 233px;
+  overflow: hidden;
+  flex-shrink: 0;
+  gap: 36px;
+}
+.batalkan {
+  position: relative;
+  font-size: var(--font-size-9xl);
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: #c84e89;
+  text-align: left;
+}
+.cancel-btn {
+  cursor: pointer;
+  border: 2px solid var(--color-palevioletred-100);
+  padding: var(--padding-10xl) 223px;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.cancel-btn:hover,
+.confirm-btn:hover {
+  animation: 3s ease 0s infinite normal none shadow-pop-tr;
+  opacity: 1;
+}
+.konfirmasi {
+  position: relative;
+  font-size: var(--font-size-9xl);
+  font-weight: 600;
+  font-family: var(--font-poppins);
+  color: var(--color-white);
+  text-align: left;
+}
+.confirm-btn {
+  cursor: pointer;
+  border: 2px solid var(--color-palevioletred-100);
+  padding: var(--padding-10xl) 0;
+  background-color: var(--color-indianred);
+  box-sizing: border-box;
+  width: 592px;
+  height: 109px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.confirm-btn:active,
+.frame7 {
+  display: flex;
+}
+.frame7 {
+  width: 1212px;
+  height: 105px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 49px;
+}
+.after-layer-type-of-order,
+.frame2,
+.frame6 {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.frame6 {
+  align-self: stretch;
+  align-items: flex-end;
+  justify-content: center;
+}
+.after-layer-type-of-order,
+.frame2 {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame2 {
+  align-self: stretch;
+  gap: 179px;
+}
+.after-layer-type-of-order {
+  position: relative;
+  background-color: var(--color-white);
+  width: 1440px;
+  padding: 76px 71px 25px;
+  box-sizing: border-box;
+  gap: 72px;
+  opacity: 0;
+  max-width: 90%;
+  max-height: 90%;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+.after-layer-type-of-order.animate {
+  animation: 1s ease 0s 1 normal forwards slide-in-top;
+}

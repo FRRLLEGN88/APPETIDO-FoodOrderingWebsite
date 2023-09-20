@@ -1,0 +1,79 @@
+.appetido-icon7 {
+  position: relative;
+  width: 184px;
+  height: 27px;
+}
+.icon-hamburger-menu7 {
+  position: relative;
+  width: 36px;
+  height: 28.8px;
+}
+.property-1menu-close {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.open5,
+.property-1menu-close {
+  background-color: var(--color-black);
+  width: 1440px;
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-31xl) var(--padding-225xl);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-between;
+}
+.home1 {
+  position: relative;
+  font-weight: 600;
+  cursor: pointer;
+}
+.open6 {
+  background-color: var(--color-black);
+  width: 1440px;
+  height: 59px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-31xl) var(--padding-225xl);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: center;
+}
+.hubungi-kami1 {
+  position: relative;
+  font-weight: 600;
+}
+.open9,
+.property-1menu-open {
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.open9 {
+  background-color: var(--color-goldenrod-100);
+  height: 59px;
+  padding: var(--padding-31xl) var(--padding-225xl);
+  box-sizing: border-box;
+  justify-content: center;
+}
+.property-1menu-open {
+  position: absolute;
+  top: 263px;
+  left: 20px;
+  justify-content: flex-start;
+}
+.menu-updown-fix7 {
+  position: relative;
+  border-radius: 5px;
+  border: 1px dashed #9747ff;
+  box-sizing: border-box;
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+  font-family: var(--font-plus-jakarta-sans);
+}
